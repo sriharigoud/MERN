@@ -77,6 +77,7 @@ export default function Post({
                 onError={(e) => e.target.src = post.user.avatar}
                 className="rounded-circle"
                 width="45"
+                height="45"
                 src={post.user.imageData ? post.user.imageData : post.user.avatar}
                 alt=""
               />

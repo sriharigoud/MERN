@@ -9,6 +9,7 @@ export default function BasicInfo({
   setUserInfo,
   setCurrentUser,
   currentUser,
+  hideProfileInfoSmallDevices
 }) {
   const [show, setShow] = useState(false);
   const [value, setValue] = useState(userInfo.bio);
@@ -91,7 +92,7 @@ export default function BasicInfo({
 
   return (
     <React.Fragment>
-      <div className="card">
+      <div className={!hideProfileInfoSmallDevices ? "card" : "card d-none d-md-block"}>
         <div style={{ position: "relative" }} className="userContainer">
           {/* <SRLWrapper> */}
           {/* <a

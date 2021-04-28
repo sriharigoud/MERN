@@ -47,7 +47,8 @@ export default function SideBar() {
                         className="rounded-circle"
                         src={user.imageData ? user.imageData : user.avatar}
                         alt="user"
-                        width="65"
+                        width="50"
+                        height="50"
                       />
                     </span>
                   </div>
