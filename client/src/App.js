@@ -30,7 +30,7 @@ import {
 import "react-notifications/lib/notifications.css";
 Pusher.logToConsole = true;
 
-var pusher = new Pusher("7dc6161506f7d658f25", {
+var pusher = new Pusher("", {
   cluster: "",
 });
 
